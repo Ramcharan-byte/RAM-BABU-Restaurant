@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAM BABU Restaurant</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <h2>RAM BABU Restaurant</h2>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#menu">Menu</a></li>
+
+            <li><a href="#gallery">Gallery</a></li>
+
+            <li><a href="#reservation">Reservation</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="login.html" id="loginBtn">Login</a>
+            </li>
+
+            <li>
+                <a href="signup.html" id="signupBtn">Signup</a>
+            </li>
+
+            <li>
+                <button id="logoutBtn" style="display:none;">
+                    Logout
+                </button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Welcome to RAM BABU Restaurant</h1>
+
+        <p>
+            Delicious Food • Fresh Ingredients • Best Dining Experience
+        </p>
+
+        <a href="#reservation" class="btn">
+            Reserve a Table
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+
+        Welcome to <strong>RAM BABU Restaurant</strong>.
+
+        We serve authentic Indian, Chinese, South Indian and Continental
+        dishes prepared using fresh ingredients and traditional recipes.
+
+        Our goal is to provide every customer with delicious food,
+        excellent service and a memorable dining experience.
+
+    </p>
+
+</section>
+<!-- ================= MENU ================= -->
+
+<section class="menu" id="menu">
+
+    <h2>Our Special Dishes</h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+
+            <img src="images/biryani.jpg" alt="Chicken Biryani">
+
+            <h3>Chicken Biryani</h3>
+
+            <p>₹250</p>
+
+            <button>Order Now</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/butter-chicken.jpg" alt="Butter Chicken">
+
+            <h3>Butter Chicken</h3>
+
+            <p>₹320</p>
+
+            <button>Order Now</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/paneer.jpg" alt="Paneer Butter Masala">
+
+            <h3>Paneer Butter Masala</h3>
+
+            <p>₹220</p>
+
+            <button>Order Now</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/fried-rice.jpg" alt="Veg Fried Rice">
+
+            <h3>Veg Fried Rice</h3>
+
+            <p>₹180</p>
+
+            <button>Order Now</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FACILITIES ================= -->
+
+<section class="facilities">
+
+    <h2>Why Choose Us?</h2>
+
+    <div class="facility-container">
+
+        <div class="facility">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Fresh Food</h3>
+            <p>Prepared daily with quality ingredients.</p>
+        </div>
+
+        <div class="facility">
+            <i class="fa-solid fa-motorcycle"></i>
+            <h3>Fast Delivery</h3>
+            <p>Quick and reliable home delivery service.</p>
+        </div>
+
+        <div class="facility">
+            <i class="fa-solid fa-wifi"></i>
+            <h3>Free Wi-Fi</h3>
+            <p>Enjoy free internet while dining.</p>
+        </div>
+
+        <div class="facility">
+            <i class="fa-solid fa-car"></i>
+            <h3>Free Parking</h3>
+            <p>Safe and spacious parking for customers.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery" id="gallery">
+
+    <h2>Gallery</h2>
+
+    <div class="gallery-container">
+
+        <img src="images/gallery1.jpg" alt="Restaurant">
+        <img src="images/gallery2.jpg" alt="Dining Area">
+        <img src="images/gallery3.jpg" alt="Food">
+        <img src="images/gallery4.jpg" alt="Chef">
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIAL ================= -->
+
+<section class="testimonial">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review">
+
+        <p>
+
+            "Excellent food, friendly staff and a wonderful atmosphere.
+            One of the best restaurants in Hyderabad!"
+
+        </p>
+
+        <h4>- Rahul Sharma</h4>
+
+    </div>
+
+</section>
+<!-- ================= RESERVATION ================= -->
+
+<section class="reservation" id="reservation">
+
+    <h2>Reserve Your Table</h2>
+
+    <form>
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <input
+            type="tel"
+            placeholder="Phone Number"
+            required
+        >
+
+        <input
+            type="date"
+            required
+        >
+
+        <input
+            type="time"
+            required
+        >
+
+        <input
+            type="number"
+            placeholder="Number of Guests"
+            min="1"
+            required
+        >
+
+        <button type="submit">
+            Reserve Now
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-details">
+
+        <p>
+            <strong>📍 Address:</strong>
+            Hyderabad, Telangana
+        </p>
+
+        <p>
+            <strong>📞 Phone:</strong>
+            +91 6301642640
+        </p>
+
+        <p>
+            <strong>📧 Email:</strong>
+            info@rambaburestaurant.com
+        </p>
+
+        <p>
+            <strong>🕒 Timings:</strong>
+            10:00 AM - 11:00 PM
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 RAM BABU Restaurant. All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

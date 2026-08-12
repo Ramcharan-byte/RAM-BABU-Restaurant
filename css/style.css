@@ -1,0 +1,265 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    width:100%;
+    background:#8B0000;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 80px;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+
+}
+
+.logo h2{
+
+    font-size:30px;
+
+    letter-spacing:1px;
+
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:30px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+nav ul li a:hover{
+
+    color:#FFD700;
+
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+/* Dark Overlay */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    color:white;
+
+    z-index:10;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#FFD700;
+
+    color:#000;
+
+    padding:15px 40px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:white;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================
+   COMMON SECTION
+========================== */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#8B0000;
+
+    margin-bottom:30px;
+
+}
+
+section p{
+
+    text-align:center;
+
+    font-size:18px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   SIMPLE FADE ANIMATION
+========================== */
+
+.hero-content{
+
+    animation:fadeIn 1.5s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
